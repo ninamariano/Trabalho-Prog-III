@@ -1,2 +1,2 @@
-trabalho1.github.io
+https://ninamariano.github.io
 
