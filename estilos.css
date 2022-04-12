@@ -1,0 +1,122 @@
+*{
+	margin: 0;
+    padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	line-height: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F2F2F2;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: #A068AD;
+    min-height:50px;
+    margin-top: auto;
+}
+
+header {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    min-height:100px;
+    box-shadow: 0px 0px 7px gray;
+
+}
+
+a#img {
+	width: 100px;
+}
+
+.bg-nav{
+    background-color: #7952b3;
+
+}
+
+
+ul,li {
+
+	list-style: none;
+	font-size: 1.2rem;
+	
+}
+
+a{
+    text-decoration: none;
+    color: #A068AD;
+
+}
+
+.navbar-nav{
+	margin-right: 10px;
+	margin-left:10px;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.margin1 {
+	margin-top: 10%;
+}
+
+
+.cabecalho_materias {
+	margin-top: 4%;
+	 text-align: center;
+	 font-size: 300%;
+	 margin-bottom: 5%;
+}
+
+.container{
+	display: flex;
+	flex-direction: collum;
+	width: 100%;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+.box{
+	width: 15%;
+	border: 1px solid black;
+	margin: 1%;
+	padding-bottom: 20%;
+	text-align: center;
+	
+	
+}
+
+#mlinguagens{
+	background: orange;
+	
+}
+
+#mexatas{
+	background: #3338FF;
+}
+
+#mnaturezas{
+	background: green;
+}
+
+#mhumanas{
+	background: yellow;
+}
