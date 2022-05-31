@@ -1,94 +1,167 @@
 <!DOCTYPE html>
-<html lang="pt-br">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/estilo.css">
-    <title>CADASTRO</title>
-</head>
+<html>
 
-<body>
-    <div class="container">
-        <div class="form-image">
-            <img src="assets/img/undraw_online_resume_re_ru7s.svg" alt="">
-        </div>
-        <div class="form">
-            <form action="/action_page.php">
-                <div class="form-header">
-                    <div class="title">
-                        <h1>Cadastre-se</h1>
-                    </div>
-                </div>
+    <head>
+         
+		<!-- Meta tags obrigatórias -->
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-                <div class="input-group">
-                    <div class="input-box">
-                        <label for="firstname">Primeiro Nome</label>
-                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
-                    </div>
+		<!-- Estilo customizado -->
+		<link rel="stylesheet" href="css/estilos.css" />
+		 
+		<!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		
+		<!--Adicionar título da página -->
+        <title>Stunizado</title>
 
-                    <div class="input-box">
-                        <label for="lastname">Sobrenome</label>
-                        <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
-                    </div>
-                    <div class="input-box">
-                        <label for="email">E-mail</label>
-                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
-                    </div>
+    </head>
 
-                    <div class="input-box">
-                        <label for="number">Celular</label>
-                        <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
-                    </div>
+    <body>
+   
+        <header>
+			<nav class="navbar navbar-expand-md cor-fundo" >
+				<div class="container">
+				
+					<!--ícone home-->
+					<div class="m-auto">
+						<img class="tamanhoImg" src="img/logo.png">
+					</div>
+			
+					<!--menu responsivo-->
+					<div class="container m-auto btn ">
+					
+						<!--criando e colapsando os links do menu-->
+						<div class="navbar-collapse" id="nav-principal">
+							<ul class="navbar-nav ml-auto font-weight-bold ">
+								<li class="nav-item ">
+									<a href="index.html" class="nav-link color">Menu</a>
+								</li>
+								<li class="nav-item">
+									<a href="contato.html" class="nav-link color">Contato</a>
+								</li>
+								<li class="nav-item">
+									<a href="materias.html" class="nav-link color">Matérias</a>
+								</li>
+								<li class="nav-item">
+									<a href="cadastro.html" class="nav-link color">Cadastro</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				<!--final desse container-->
+				</div>
+			
+			<!--final da barra de navegação-->
+			</nav>
 
-                    <div class="input-box">
-                        <label for="password">Senha</label>
-                        <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
-                    </div>
+        </header>
 
+        <!--Início do section-->
+        <section>
+            <!--Primeiro texto-->
+		    <div class="row margin1 mb-1">
+                <div class="col-sm-4 offset-sm-1">
+				    <h1>Feito para facilitar o seu estudo e a sua rotina!</h1>
+				    <p class="mt-4">O estunizado vai te auxiliar na criação de um cronograma que se adeque à sua realidade e torne o estudo prático e prazeroso.<p>
+			    </div>
+			        <!--Primeira imagem-->
+			        <div class="col-sm-5 offset-sm-1">
+				    <img  class="imagem1" src="img/imagem1.jpg" alt="1" title="início" />
+			    </div>
+			</div>
 
-                    <div class="input-box">
-                        <label for="confirmPassword">Confirme sua Senha</label>
-                        <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Digite sua senha novamente" required>
-                    </div>
+		    <!--Segunda imagem-->
+			<div class="row margin1 mb-1">
+			    <div class="col-auto offset-sm-1">
+				    <img  class="imagem4" src="img/imagem4.jpeg" alt="1" title="início" />
+			    </div>
+                <!--Segundo texto-->
+			    <div class="col-sm-6 offset-sm-1">
+				    <h1>O que é o Stunizado?</h1>
+					<p class="mt-4">O stunizado foi criado por alunos para alunos, pensando nas próprias necessidades os desenvolvedores idealizaram esse programa com o intuido de atender as suas necessidades também. Aqui você vai encontrar o auxílio que precisa para saber o que estudar e quando estudar de maneira simplificada, melhorando e facilitando o seu desenvolvimento para a prova do ENEM. Vem com a gente? <p>
+			    </div>
+            </div>
 
-                </div>
+			<!--Terceiro texto-->
+		    <div class="row margin1 mb-1">
+			    <div class="col-sm-6 offset-md-1">
+				    <h1>Porque ele pode ser útil para você?</h1>
+				    <p class="mt-4">Agora você não vai mais precisar se preocupar com qual matéria estudar e quando, aqui você vai poder encontrar todas essas informações e agilizar o seu processo. O stunizado tem a proposta de melhorar a sua caminhada e para isso reduzir as dores de cabeça que você pode encontrar nela.<p>
+			    <!--Terceira imagem-->
+				</div>
+			        <div class="col-auto offset-sm-1">
+				    <img  class="imagem6" src="img/imagem6.jpeg" alt="1" title="início" />
+			    </div>
+		    </div>
 
-                <div class="gender-inputs">
-                    <div class="gender-title">
-                        <h6>Gênero</h6>
-                    </div>
+        <!--Início container ferramentas-->
+		    <div class="container">
+		    <div class="row mb-5">
+			    <h1 class="col-sm-10 text-center">Ferramentas</h1>
 
-                    <div class="gender-group">
-                        <div class="gender-input">
-                            <input id="female" type="radio" name="gender">
-                            <label for="female">Feminino</label>
-                        </div>
+				    <div class="col-sm-4 mt-4 m-0">
+				    <div class="card p-0 ">
+					    <img src="img/imagem2.jpg" class="card-img-top" alt="...">
+					        <div class="card-body">
+						        <h5 class="card-title">Cronograma</h5>
+						        <p class="card-text">O cronograma é feito com base nas suas necessidades e indica para você todos os conteúdos que serão estudados na semana.</p>
+					        </div>
+				    </div>
+		            </div>
 
-                        <div class="gender-input">
-                            <input id="male" type="radio" name="gender">
-                            <label for="male">Masculino</label>
-                        </div>
+				    <div class="col-sm-4 mt-4 ">
+				    <div class="card p-0 ">
+					    <img src="img/imagem3.jpg" class="card-img-top" alt="...">
+						    <div class="card-body ">
+						        <h5 class="card-title">Agenda</h5>
+						        <p class="card-text">A agenda mostra seus compromissos e programação do dia, como matérias a estudar e exercícios a fazer.</p>
+						    </div>
+				    </div>
+				    </div>
+				
+				    <div class="col-sm-4 mt-4 ">
+				    <div class="card p-0">
+					    <img src="img/imagem5.jpg" class="card-img-top" alt="...">
+						    <div class="card-body">
+						        <h5 class="card-title">Desempenho</h5>
+						        <p class="card-text">Nesta funcionalidade você vai encontrar sua evolução nos conteúdos e o seu progresso com gráficos e observaçoes.</p>
+						    </div>
+				    </div>
+				    </div>
+		    </div>
+		    <!--Fim do container-->
+	        </div>
+		<!--Fim do section-->
+	    </section>
 
-                        <div class="gender-input">
-                            <input id="others" type="radio" name="gender">
-                            <label for="others">Outros</label>
-                        </div>
-
-                        <div class="gender-input">
-                            <input id="none" type="radio" name="gender">
-                            <label for="none">Prefiro não dizer</label>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="continue-button">
-                    <button class="botao" type="submit">Enviar</button> 
-                </div>
-            </form>
-        </div>
-    </div>
-</body>
+		<!--Início do rodapé-->
+        <div class="rodape">
+			<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+			  <p class="col-md-3 mb-0 text-muted">&copy; 2022 Company, Inc</p>
+		  
+			  <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+				<svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+			  </a>
+		  
+			  <ul class="nav col-md-4 justify-content-end">
+				<li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Menu</a></li>
+				<li class="nav-item"><a href="materias.html" class="nav-link px-2 text-muted">Matérias</a></li>
+				<li class="nav-item"><a href="contato.html" class="nav-link px-2 text-muted">Contato</a></li>
+				<li class="nav-item"><a href="cadastro.html" class="nav-link px-2 text-muted">Cadastro</a></li>
+			  </ul>
+			</footer>
+		<!--Fim do rodapé-->
+		</div>
+	
+		<!-- JavaScript (Opcional) -->
+		<!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
 
 </html>

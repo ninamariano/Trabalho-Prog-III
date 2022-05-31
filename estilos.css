@@ -1,122 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
 	margin: 0;
-    padding: 0;
+  padding: 0;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+  
 }
 
+/*Estilos do body*/
 body {
 	line-height: 1;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #F2F2F2;
+    background-color: #FFFFFF;
     height:100vh;
     display: flex;
     flex-direction: column;
 }
 
-footer {
-    background-color: #A068AD;
-    min-height:50px;
-    margin-top: auto;
+/*Estilos do menu*/
+.mt-4{
+  text-align: justify;
 }
 
-header {
+.imagem1{
+  height: 330px;
+  width: 400px;
+}
+
+.imagem4{
+  height: 300px;
+  width: 350px;
+}
+
+.imagem6{
+  margin-top: 5; 
+  height: 300px;
+  width: 350px;
+}
+
+.row mb-5{
+  margin-top: 10%;
+}
+
+.card-text{
+  text-align: justify;
+}
+
+.card p-0{
+  width: 20rem;
+}
+
+/*Estilos da barra de navegação*/
+.borda{
+    box-shadow:0 0 1em rgb(182, 178, 178);
+}
+
+.cor-fundo{
+    background-color: purple;
+}
+
+.tamanhoImg{
+    width: 110px;
+    height: 25px;
+}
+
+.color{
+    color: rgb(250, 251, 251);
     
+}
+
+.color:hover{
+    color: rgb(65, 7, 75);
+}
+
+.card-body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*Estilos de matérias*/
+.row {
+    margin-top: 10%;
+    margin-bottom: 20%; 
+}
+
+.card-title{
+    text-align:center;;
+    font-weight: bolder;
+}
+
+.botao_do_card {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    min-height:100px;
-    box-shadow: 0px 0px 7px gray;
+    text-align: center;
+    font-size: small;
+}
+
+.card-text{
+    font-size: medium;
+    line-height: 150%; 
+}
+
+#botao_linguagens{
+    background-color: #fab672;
+    border-radius:20px;
+    margin-top: 60px;
+}
+
+#botao_c_natureza{
+    background-color: #c8a2c8;
+    border-radius:20px;
+    margin-top: 110px;
+}
+
+#botao_c_humanas{
+    background-color: #f08080 ;
+    border-radius:20px;
+    width: 100%;
+    margin-top: 60px;
+}
+
+#botao_matematica{
+    background-color: #87cefa;
+    border-radius:20px;
+    margin-top: 130px;
+}
+
+#c_natureza{
+    
+    border: 2px solid #c8a2c8;
+    border-radius:10px;
+    height: 20rem;
+}
+
+#c_humanas{
+    border: 2px solid #f08080;
+    border-radius:10px;
+    height: 20rem;
+}
+
+#matematica{
+    border: 2px solid #87cefa;
+    border-radius:10px;
+    height: 20rem;
+}
+
+#linguagens{
+    border: 2px solid #fab672;
+    border-radius:10px;
+    height: 20rem;
+}
+
+.carousel-inner{
+    height: 450px;
+}
+
+h1{
+    margin-left: 5%;
+    padding-top: 5%;
+}
+
+p{
+    margin-left: 5%;
+    font-size:20px;
+}
+.card-text{
+    list-style-type: circle;
+}
+
+
+/*Estilos de contato*/
+.contato{
+    padding: 20px  100px 100px 200px;
+}
+
+.container-cont{
+  width: 85%;
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container-cont .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container-cont .content .left-side{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+
+.content .left-side::before{
+  content: '';
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #98857E;
+}
+
+.content .left-side .details{
+  margin: 14px;
+  text-align: center;
+}
+
+.content .left-side .details i{
+  font-size: 30px;
+  color: rgb(255, 246, 72);
+  margin-bottom: 10px;
+}
+
+.content .left-side .details .topic{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.content .left-side .details .text-one,
+.content .left-side .details .text-two{
+  font-size: 14px;
+  color: #afafb6;
+}
+
+.container-cont .content .right-side{
+  width: 75%;
+  margin-left: 75px;
+}
+
+.content .right-side .topic-text{
+  font-size: 23px;
+  font-weight: 600;
+  color: rgb(255, 246, 72);
+}
+
+.right-side .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+
+.right-side .input-box input,
+.right-side .input-box textarea{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #F0F1F8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+
+.right-side .message-box{
+  min-height: 110px;
+}
+
+.right-side .input-box textarea{
+  padding-top: 6px;
+}
+
+.right-side .button{
+  display: inline-block;
+  margin-top: 12px;
+}
+
+.right-side .button input[type="button"]{
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: rgb(255, 246, 72);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button input[type="button"]:hover{
+  background: #C1AC9C;
+}
+
+
+/*Estilos do cadastro*/
+.bodycadastro { 
+  width: 100%; /*largura da tela toda*/
+  height: 100vh; /*altura*/
+  display: flex; /*exibição no centro*/
+  justify-content: center;/*justicar o conteudo no centro*/
+  align-items: center; /*alinhamento do item no centro*/
+  background: #fff; /*fundo*/
+  font-family: 'Inter', sans-serif;
 
 }
 
-a#img {
-	width: 100px;
+.containercad { /*div do container*/
+  width: 80%;  /*largura da tela toda*/
+  height: 80vh;  /*altura*/
+  display: flex;  /*exibição no centro*/
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212); /*sombra no container*/
 }
 
-.bg-nav{
-    background-color: #7952b3;
-
+.form-image {
+  width: 50%; /*largura de 50% relacionado ao container*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#0c0ce94d;
+  padding: 1rem; /*prenchimento de 1 rem relativa ao tamnho do fontsize*/
 }
 
-
-ul,li {
-
-	list-style: none;
-	font-size: 1.2rem;
-	
+.form-image img { /*div da imagem*/
+  width: 31rem; /*diminuir a imagem */
 }
 
-a{
-    text-decoration: none;
-    color: #A068AD;
-
+.form { /*div form*/
+  width: 50%;
+  display: flex;
+  flex-direction: column; /*inputs um embaixo do outro*/
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(240, 255, 104);
+  padding: 3rem;
 }
 
-.navbar-nav{
-	margin-right: 10px;
-	margin-left:10px;
-}
-
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-.margin1 {
-	margin-top: 10%;
+.form-header { /*div do titulo*/
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 
-.cabecalho_materias {
-	margin-top: 4%;
-	 text-align: center;
-	 font-size: 300%;
-	 margin-bottom: 5%;
+.form-header h1::after { /* detalhe embaixo do titulo*/
+  content: '';
+  display: block;
+  width: 5rem;
+  height: 0.3rem;
+  background-color: #6c63ff;
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 10px;
 }
 
-.container{
-	display: flex;
-	flex-direction: collum;
-	width: 100%;
-	margin-left: 15%;
-	margin-right: 15%;
+.input-group {
+  display: flex;
+  flex-wrap: wrap; /* quebrar e ficar um do lado do outro*/
+  justify-content: space-between;
+  padding: 1rem 0;
 }
 
-.box{
-	width: 15%;
-	border: 1px solid black;
-	margin: 1%;
-	padding-bottom: 20%;
-	text-align: center;
-	
-	
+.input-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.1rem; /*espaçamento correto*/
 }
 
-#mlinguagens{
-	background: orange;
-	
+.input-box input {
+  margin: 0.6rem 0;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px #0000001c;
+  font-size: 0.8rem;
 }
 
-#mexatas{
-	background: #3338FF;
+.input-box input:hover { /*colocar um hover mudando a cor quando passar o mouse*/
+  background-color: #eeeeee75;
 }
 
-#mnaturezas{
-	background: green;
+.input-box input:focus-visible { /*mudar a cor da borda do input*/
+  outline: 1px solid #6c63ff;
 }
 
-#mhumanas{
-	background: yellow;
+.input-box label,
+.gender-title h6 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #000000c0;
+}
+
+.input-box input::placeholder {
+  color: #000000be;
+}
+
+.gender-group { /*genero*/
+  display: flex; /*exibição flexivel*/
+  justify-content: space-between; /*conteudo espaço entre eles)*/
+  margin-top: 0.62rem; /*topo da margem*/
+  padding: 0 .5rem;/*preenchimento*/
+}
+
+.gender-input { /*genero dos atributos*/
+  display: flex; /*exibição flexivel*/
+  align-items: center; /*alinhar os itens*/
+}
+
+.gender-input input { /*genero dos atributos (espaçamento entre a bolinha e o texto*/
+  margin-right: 0.35rem;/*margem a direita*/
+}
+
+.gender-input label { /*texto*/
+  font-size: 0.81rem; /*tamanho da fonte*/
+  font-weight: 600;/*peso da fonte*/
+  color: #000000c0; /*cor*/
+}
+
+.continue-button button { /*butão continuar*/
+  width: 100%; 
+  margin-top: 2.5rem;/*margem superior*/
+  border: none;
+  background-color: #6c63ff;
+  padding: 0.62rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.continue-button button:hover { /* mudar cor quando passar o mouse*/
+  background-color: #6b63fff1;
+}
+
+.continue-button button a { /*texto dentro do botão*/
+  text-decoration: none;/*decoração do texto*/
+  font-size: 0.93rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+
+
+@media screen and (max-width: 1064px) {/*deixar responsivo o container fazendo com que adapta ao browser do usuário*/
+  .containercad {
+      width: 90%;
+      height: auto;
+  }
+  .input-group {
+      flex-direction: column;
+      z-index: 5;
+      padding-right: 5rem;
+      max-height: 10rem;
+      overflow-y: scroll;
+      flex-wrap: nowrap;
+  }
+  .gender-inputs {
+      margin-top: 2rem;
+  }
+  .gender-group {
+      flex-direction: column;
+  }
+  .gender-title h6 {
+      margin: 0;
+  }
+  .gender-input {
+      margin-top: 0.5rem;
+  }
 }

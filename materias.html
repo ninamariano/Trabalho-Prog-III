@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <!-- Meta tags obrigatórias -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link 
+        rel="stylesheet" 
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"
+        />
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        />
+
+        <!-- Estilo customizado -->
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+        <!--Adicionar título da página -->
+        <title>Matérias</title>
+        
+    </head>
+
+
+    <body class="areaaluno">
+        <header>
+            <nav class="navbar navbar-expand-md cor-fundo" >
+                <div class="container">
+                
+                    <!--ícone home-->
+                    <div class="m-auto">
+                        <img class="tamanhoImg" src="img/logo.png">
+                    </div>
+            
+                    <!--menu responsivo-->
+                    <div class="container m-auto btn ">
+                    
+                        <!--criando e colapsando os links do menu-->
+                        <div class="navbar-collapse" id="nav-principal">
+                            <ul class="navbar-nav ml-auto font-weight-bold ">
+                                <li class="nav-item ">
+                                    <a href="index.html" class="nav-link color">Menu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contato.html" class="nav-link color">Contato</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="materias.html" class="nav-link color">Matérias</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="cadastro.html" class="nav-link color">Cadastro</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                <!--final desse container-->
+                </div>
+            
+            <!--final da barra de navegação-->
+            </nav> 
+        </header>
+
+        <!--título e subtítulo-->
+        <div>
+            <h1>O que você vai estudar no stunizado</h1>
+            <p>Você irá encontar resumos, vídeo-aulas e exercício organizados por matéria.</p>
+        </div>
+
+        <!--Início do section-->
+        <section class="materias">
+        <div class="paginaprincipal">
+
+            <!--parte principal 'cards'-->
+            <div class="container">
+                <div class="row " >
+                    <!--Card 1-->
+                    <div class="col" >
+                        <div class="card p-0 boxes " id="linguagens">
+                            <div class="card-body">
+                            <h5 class="card-title">Linguagens e suas tecnologias</h5>
+                            <li class="card-text">Língua portuguesa</li>
+                            <li class="card-text">Literatura</li>
+                            <li class="card-text">Língua estrangeira</li>
+                            <li class="card-text">Artes</li>
+                            <a href="cadastro.html" class="btn btn-primary pl-5 botao_do_card" id="botao_linguagens">COMEÇAR AGORA</a>
+                            </div> 
+                        </div>
+                    </div>
+
+                    <!--Card 2-->
+                    <div class="col" >
+                        <div class="card p-0 boxes" id="c_natureza">
+                            <div class="card-body ">
+                            <h5 class="card-title">Ciências da natureza</h5>
+                            <li class="card-text">Biologia</li>
+                            <li class="card-text">Física</li>
+                            <li class="card-text">Química</li>
+                            <a href="cadastro.html" class="btn btn-primary pl-5 botao_do_card" id="botao_c_natureza">COMEÇAR AGORA</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Card 3-->
+                    <div class="col">
+                        <div class="card p-0 boxes" id="c_humanas">
+                            <div class="card-body ">
+                            <h5 class="card-title">Ciências </br>humanas</h5>
+                            <li class="card-text">História</li>
+                            <li class="card-text">Geografia</li>
+                            <li class="card-text">Filosofia</li>
+                            <li class="card-text">Sociologia</li>
+                            <a href="cadastro.html" class="btn btn-primary botao_do_card pl-5" id="botao_c_humanas">COMEÇAR AGORA</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Card 4-->
+                    <div class="col">
+                        <div class="card p-0 boxes" id="matematica" >
+                            <div class="card-body">
+                            <h5 class="card-title">Matemática e suas tecnologias</h5>
+                            <li class="card-text">Matemática</li>
+                            <a href="cadastro.html" class="btn btn-primary pl-5 botao_do_card" id="botao_matematica">COMEÇAR AGORA</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--fim do section-->
+        </section>
+        <!--fim div principal-->
+
+
+
+
+        <!--Início do rodapé-->
+        <div class="rodape">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+              <p class="col-md-3 mb-0 text-muted">&copy; 2022 Company, Inc</p>
+          
+              <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+              </a>
+          
+              <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Menu</a></li>
+                <li class="nav-item"><a href="materias.html" class="nav-link px-2 text-muted">Matérias</a></li>
+                <li class="nav-item"><a href="contato.html" class="nav-link px-2 text-muted">Contato</a></li>
+                <li class="nav-item"><a href="cadastro.html" class="nav-link px-2 text-muted">Cadastro</a></li>
+              </ul>
+            </footer>
+          </div>
+        <!--Fim do rodapé-->
+        
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    </body>
+</html>
